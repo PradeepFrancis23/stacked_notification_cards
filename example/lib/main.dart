@@ -33,6 +33,21 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       title: 'OakTree 1',
       subtitle: 'We believe in the power of mobile computing.',
+      child: Padding(
+        padding: const EdgeInsets.only(top: 5, left: 15, right: 15, bottom: 10),
+        child: Row(
+          children: [
+            Text('Congrats'),
+            Padding(
+              padding: const EdgeInsets.only(left: 35),
+              child: TextButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.arrow_forward_sharp),
+                  label: Text("Next")),
+            )
+          ],
+        ),
+      ),
     ),
     NotificationCard(
       date: DateTime.now().subtract(

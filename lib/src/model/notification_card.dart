@@ -5,11 +5,13 @@ class NotificationCard {
   final Widget leading;
   final String title;
   final String subtitle;
+  Widget? child;
 
-  const NotificationCard({
+  NotificationCard({
     required this.date,
     required this.leading,
     required this.title,
     required this.subtitle,
+    this.child,
   });
 }
